@@ -33,27 +33,27 @@ import java.util.logging.Logger;
             }
             l.info("Print the initial elements of hashmap" +med);
             med.putIfAbsent(103, "Acetaminophen");
-            System.out.println("After putIfAbsent() method print the elements using hashmap");
+            l.info("After putIfAbsent() method print the elements using hashmap");
             for(Map.Entry m:med.entrySet()){
                   l.log(Level.INFO, () ->(m.getKey()+" "+m.getValue()));
             }
             HashMap<Integer,String> med1=new HashMap<Integer,String>();
             med1.put(104,"Ravi");
-            System.out.println("Updating the elements using Hashmap ");
+            l.info("Updating the elements using Hashmap ");
             for(Map.Entry m:med1.entrySet()){
                 l.log(Level.INFO, () ->(m.getKey()+" "+m.getValue()));
             }
-            System.out.println("Give the remove elements using hashmap");
+            l.info("Give the remove elements using hashmap");
             int n=sc.nextInt();
             med.remove(n);
-            l.info("After removing the list of elements using hashmap key "+med);
+             l.log(Level.INFO, () ->"After removing the list of elements using hashmap key "+med);
             l.info("Enter the name to remove");
             String name1=sc1.nextLine();
             med.remove(n, name1);
-            l.info("After removing the list of elements using hashmap key value pair: "+med);
+            l.log(Level.INFO, () ->("After removing the list of elements using hashmap key value pair: "+med);
             l.info("To clear the elements using Hashmap");
             med.clear();
             l.info("To check hashmap is empty or not?");
-            l.info(med.isEmpty());
+             l.log(Level.INFO, () ->(med.isEmpty());
         }
     }
