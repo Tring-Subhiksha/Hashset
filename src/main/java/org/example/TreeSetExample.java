@@ -3,9 +3,9 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.TreeSet;
 public class TreeSetExample {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        TreeSet<Integer> med=new TreeSet();
+        TreeSet<Integer> med=new TreeSet<Integer>();
         Logger l=Logger.getLogger("com.api.jar");
         med.add(200);
         med.add(900);
