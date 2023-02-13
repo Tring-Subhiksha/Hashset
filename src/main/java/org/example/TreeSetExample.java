@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class TreeSetExample {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        TreeSet<Integer> med=new TreeSet<Integer>();
+        TreeSet<Integer> med=new TreeSet<>();
         Logger l=Logger.getLogger("com.api.jar");
         med.add(200);
         med.add(900);
@@ -14,7 +14,7 @@ public class TreeSetExample {
         med.add(672);
         med.add(900);
          l.log(Level.INFO, () ->"Print the medical price using Treeset it will print in sorted order: "+med);
-        TreeSet med1=new TreeSet();
+        TreeSet<Integer> med1=new TreeSet<>();
         l.info("Add new price to the existing treeset");
         int n=sc.nextInt();
         med1.add(n);
