@@ -31,18 +31,18 @@ public class Hashset {
         med.add(s2);
         med.add(s3);
         Iterator<Medicines> iterator = med.iterator();
-        System.out.println("Print the  Medicine names using Hashset");
+        l.info("Print the  Medicine names using Hashset");
         while (iterator.hasNext()) {
-            System.out.println(iterator.next().name);
+            l.info(iterator.next().name);
         }
-        System.out.println("To remove one item from the hashset");
-        System.out.println(med.remove(s2));
-        System.out.println("To check whether the elements is present or not in hashset");
-        System.out.println(med.contains(s2));
-        System.out.println("To clear the elements using Hashset");
+        l.info("To remove one item from the hashset");
+        l.info(med.remove(s2));
+        l.info("To check whether the elements is present or not in hashset");
+         l.log(Level.INFO, () ->(med.contains(s2));
+        l.info("To clear the elements using Hashset");
         med.clear();
-        System.out.println("To check hashset is empty or not?");
-        System.out.println(med.isEmpty());
+        l.info("To check hashset is empty or not?");
+         l.log(Level.INFO, () ->(med.isEmpty());
 
     }
 }
