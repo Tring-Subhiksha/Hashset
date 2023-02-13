@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class TreeSetExample {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        TreeSet med=new TreeSet();
+        TreeSet<Integer> med=new TreeSet();
         Logger l=Logger.getLogger("com.api.jar");
         med.add(200);
         med.add(900);
