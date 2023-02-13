@@ -20,9 +20,9 @@ public class TreeSetExample {
         med1.add(n);
         med1.addAll(med);
           l.log(Level.INFO, () ->"Print the new price with the existing price "+med1);
-       int f= (int) med1.first();
+       int f=  med1.first();
         l.log(Level.INFO, () ->"Print the First price of the Treeset "+f);
-       int la  = (int) med1.last();
+       int la  =  med1.last();
           l.log(Level.INFO, () ->"Print the Last price of the Treeset "+la);
           l.log(Level.INFO, () ->"It returns and remove the element using pollfirst method: "+med1.pollFirst());
           l.log(Level.INFO, () ->"It returns and remove the element using polllast method: "+med1.pollLast());
